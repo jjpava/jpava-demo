@@ -1,0 +1,16 @@
+### Create a post
+POST localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "Hello world",
+  "content": "Hello world, in this article..."
+}
+
+### All posts
+GET localhost:8080/posts?page=0
+
+### Search posts
+GET localhost:8080/posts?query=hello&page=0
+
+###
