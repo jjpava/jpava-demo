@@ -2,7 +2,6 @@ package io.github.jjpava.jpavademo;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,19 +18,14 @@ public class PostsController {
     }
 
     @GetMapping
-    public List<Post> search(@RequestParam(defaultValue = "") String query,
-                             @RequestParam Integer page) {
-        PageRequest pageRequest = PageRequest.of(page - 1, 10);
+    public List<Post> search(@RequestParam(required = false, defaultValue = "") String query,
+                             @RequestParam(required = false, defaultValue = "0") Integer page) {
+        PageRequest pageRequest = PageRequest.of(page, 5);
         Page<Post> posts = postsRepository.findAll(
                 withText(query).inAnyColumnOf(Post.class),
                 pageRequest
         );
         return posts.toList();
-    }
-
-    @GetMapping
-    public List<Post> search(@RequestParam(defaultValue = "") String query) {
-        return postsRepository.findAll(withText(query).inAnyColumnOf(Post.class));
     }
 
     @PostMapping
