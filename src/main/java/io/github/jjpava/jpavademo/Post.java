@@ -1,5 +1,6 @@
 package io.github.jjpava.jpavademo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,40 +9,42 @@ import javax.persistence.Id;
 public class Post {
     @Id
     @GeneratedValue
-    private Long id;
+    private Long postId;
 
-    private String title;
-    private String content;
+    private String postTitle;
+
+    @Column(name = "content")
+    private String postContent;
 
     public Post() {
     }
 
-    public Post(String title, String content) {
-        this.title = title;
-        this.content = content;
+    public Post(String postTitle, String postContent) {
+        this.postTitle = postTitle;
+        this.postContent = postContent;
     }
 
-    public Long getId() {
-        return id;
+    public Long getPostId() {
+        return postId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setPostId(Long id) {
+        this.postId = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getPostTitle() {
+        return postTitle;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setPostTitle(String title) {
+        this.postTitle = title;
     }
 
-    public String getContent() {
-        return content;
+    public String getPostContent() {
+        return postContent;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setPostContent(String content) {
+        this.postContent = content;
     }
 }

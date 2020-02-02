@@ -3,8 +3,17 @@ POST localhost:8080/posts
 Content-Type: application/json
 
 {
-  "title": "Hello world",
-  "content": "Hello world, in this article..."
+  "postTitle": "Hello world",
+  "postContent": "Hello world, in this article..."
+}
+
+### Create a post
+POST localhost:8080/posts
+Content-Type: application/json
+
+{
+  "postTitle": "Column is called 'content' in db.",
+  "postContent": "Hello world, in this article... 134657"
 }
 
 ### All posts
@@ -12,5 +21,8 @@ GET localhost:8080/posts?page=0
 
 ### Search posts
 GET localhost:8080/posts?query=hello&page=0
+
+### Search posts
+GET localhost:8080/posts?query=4&page=0
 
 ###
