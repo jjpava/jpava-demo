@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 
 import static io.github.jjpava.jpava.specifications.TextSpecifications.withText;
+import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -32,10 +33,7 @@ public class TextSpecificationTest {
 
     @BeforeEach
     public void fillDatabase() {
-        postsRepository.save(wordsEverywhere);
-        postsRepository.save(wordInTitle);
-        postsRepository.save(wordInText);
-        postsRepository.save(noWords);
+        postsRepository.saveAll(asList(wordsEverywhere, wordInTitle, wordInText, noWords));
         searchResult = postsRepository.findAll(withText("Word").inAnyColumnOf(Post.class));
     }
 
