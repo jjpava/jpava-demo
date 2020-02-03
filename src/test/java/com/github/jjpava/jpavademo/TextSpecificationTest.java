@@ -1,4 +1,4 @@
-package io.github.jjpava.jpavademo;
+package com.github.jjpava.jpavademo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static io.github.jjpava.jpava.specifications.TextSpecifications.withText;
+import static com.github.jjpava.jpava.specifications.TextSpecifications.withText;
 import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

@@ -1,4 +1,4 @@
-package io.github.jjpava.jpavademo;
+package com.github.jjpava.jpavademo;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
