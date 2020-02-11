@@ -8,9 +8,10 @@
         <version>2.2.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.github.jjpava</groupId>
+
+    <groupId>com.github.scfj</groupId>
     <artifactId>jpava-demo</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <name>jpava-demo</name>
     <description>Example of jpava usage</description>
 
@@ -45,11 +46,11 @@
             </exclusions>
         </dependency>
 
-        <!-- https://github.com/jjpava/jpava -->
+        <!-- https://github.com/scfj/jpava -->
         <dependency>
-            <groupId>com.github.jjpava</groupId>
+            <groupId>com.github.scfj</groupId>
             <artifactId>jpava</artifactId>
-            <version>1.1.0</version>
+            <version>1.2.0</version>
         </dependency>
 
         <dependency>

@@ -1,4 +1,4 @@
-package com.github.jjpava.jpavademo;
+package com.github.scfj.jpavademo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.github.jjpava.jpavademo;
+package com.github.scfj.jpavademo;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static com.github.jjpava.jpava.specifications.TextSpecifications.withText;
+import static com.github.scfj.jpava.specifications.TextSpecifications.withText;
 
 @RestController
 @RequestMapping("/posts")

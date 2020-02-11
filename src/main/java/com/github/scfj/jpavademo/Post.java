@@ -1,4 +1,4 @@
-package com.github.jjpava.jpavademo;
+package com.github.scfj.jpavademo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
