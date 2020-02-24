@@ -1,4 +1,8 @@
 # jpava-demo
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/e2087405eb3994b076d6/maintainability)](https://codeclimate.com/github/scfj/jpava-demo/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e2087405eb3994b076d6/test_coverage)](https://codeclimate.com/github/scfj/jpava-demo/test_coverage)
+
 Example of jpava usage. See jpava applied to typical web application.
 
 ## Run tests
